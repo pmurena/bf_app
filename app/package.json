@@ -1,5 +1,5 @@
 {
-  "main": "blank.js",
-  "name": "blank",
+  "main": "app.js",
+  "name": "BuddyFinder",
   "version": "0.1.22"
 }

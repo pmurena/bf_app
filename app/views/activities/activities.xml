@@ -1,0 +1,9 @@
+<Page loaded="loaded">
+    <GridLayout rows="auto, *" columns="2*, *">
+        <ListView items="{{ activities }}" id="activities" row="1" colSpan="2">
+            <ListView.itemTemplate>
+                <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
+            </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>
