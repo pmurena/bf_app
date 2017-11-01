@@ -1,0 +1,9 @@
+<Page loaded="loaded">
+    <ActionBar title="BuddyFinder">
+        <ActionItem text="New" tap="newActivity" />
+    </ActionBar>
+    <GridLayout rows="auto, auto" columns="*">
+        <Label id="name" text="{{ name }}" row="0" horizontalAlignment="left" verticalAlignment="center"/>
+        <Label text="{{ description }}" row="1" textWrap="true" horizontalAlignment="left" verticalAlignment="center"/>
+    </GridLayout>
+</Page>

@@ -1,0 +1,7 @@
+<Page loaded="loaded">
+    <StackLayout>
+        <TextField text="{{ name }}" id="email" hint="Activiy name" />
+        <TextField text="{{ description }}" hint="Say something about your activity" />
+        <Button text="Create Activity" tap="createActivity" />
+    </StackLayout>
+</Page>

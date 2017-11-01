@@ -1,8 +1,11 @@
 <Page loaded="loaded">
+    <ActionBar title="BuddyFinder">
+        <ActionItem text="New" tap="newActivity" />
+    </ActionBar>
     <GridLayout rows="auto, *" columns="2*, *">
-        <ListView items="{{ activities }}" id="activities" row="1" colSpan="2">
+        <ListView items="{{ activities }}" id="activities" itemTap="showActivity" row="1" colSpan="2">
             <ListView.itemTemplate>
-                <Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
+                <Label id="name" text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
             </ListView.itemTemplate>
         </ListView>
     </GridLayout>

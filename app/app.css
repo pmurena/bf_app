@@ -18,3 +18,8 @@ Button {
     margin: 10;
     padding: 10;
 }
+
+Label#name{
+    font-size: 20px;
+    font-weight: bold;
+}
