@@ -1,3 +1,3 @@
 module.exports = {
-    apiUrl: "http://192.168.1.118:3000/"
+    apiUrl: "https://blooming-fortress-94706.herokuapp.com/"
 };
