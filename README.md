@@ -21,7 +21,9 @@ Technology wise we are only bound to Node.Js and GitHub so far. Considering the 
 see nativce script installation giude to get up and running: https://docs.nativescript.org/start/quick-setup
 
 ## How to run
-After completing the installation you will need to define the server address in ./app/shared/config.js. By default, the public server running on Heroku is set. You may, however, choose to run the server locally in which case you can refer to https://github.com/pmurena/buddyfinder/blob/master/README.md for more details.
+To run this app you will need access to a BuddyFinder server. By default the public Heroku instance is used. If you, however, choose to use a different server you will need to change the ./app/shared/config.js accordingly. 
+
+See the BuddyFinder Server documentation for details on how to get it running. https://github.com/pmurena/buddyfinder/blob/master/README.md
 
 Once you have a valid native installation and a running server all you need to do is to navigate to run the following command from your project folder:
 
