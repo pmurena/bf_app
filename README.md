@@ -33,4 +33,4 @@ or
       tns run iOS
 
 ## Dev Tools Used
-You can use your any nodejs friendly IDE or your favorit texteditor such as Atom for example (https://atom.io/)
+All you need is your favorit texteditor such as Atom for example (https://atom.io/)
