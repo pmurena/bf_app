@@ -28,6 +28,9 @@ See the BuddyFinder Server documentation for details on how to get it running. h
 Once you're set-up and have your config straight run the following command from your project folder:
 
       tns run android
+or
+
+      tns run iOS
 
 ## Dev Tools Used
 You can use your any nodejs friendly IDE or your favorit texteditor such as Atom for example (https://atom.io/)
