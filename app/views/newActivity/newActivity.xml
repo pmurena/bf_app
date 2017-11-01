@@ -1,4 +1,6 @@
 <Page loaded="loaded">
+    <ActionBar title="BuddyFinder">
+    </ActionBar>
     <StackLayout>
         <TextField text="{{ name }}" id="email" hint="Activiy name" />
         <TextField text="{{ description }}" hint="Say something about your activity" />
