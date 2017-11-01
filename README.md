@@ -22,7 +22,9 @@ see nativce script installation giude to get up and running: https://docs.native
 
 ## How to run
 After completing the installation you will need to define the server address in ./app/shared/config.js. By default, the public server running on Heroku is set. You may, however, choose to run the server locally in which case you can refer to https://github.com/pmurena/buddyfinder/blob/master/README.md for more details.
+
 Once you have a valid native installation and a running server all you need to do is to navigate to run the following command from your project folder:
+
       tns run android
 
 ## Dev Tools Used
