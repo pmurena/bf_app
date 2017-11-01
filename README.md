@@ -25,7 +25,7 @@ To run this app you will need access to a BuddyFinder server. By default the pub
 
 See the BuddyFinder Server documentation for details on how to get it running. https://github.com/pmurena/buddyfinder/blob/master/README.md
 
-Once you have a valid native installation and a running server all you need to do is to navigate to run the following command from your project folder:
+Once you're set-up and have your config straight run the following command from your project folder:
 
       tns run android
 
