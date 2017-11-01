@@ -17,6 +17,7 @@ Technology wise we are only bound to Node.Js and GitHub so far. Considering the 
 - tns-android 3.3.x
 - tns-ios 3.3.x
 - buddyfinder server
+
 see nativce script installation giude to get up and running: https://docs.nativescript.org/start/quick-setup
 
 ## How to run
