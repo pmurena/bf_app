@@ -1,21 +1,17 @@
 var frameModule = require("ui/frame");
-var observableModule = require("data/observable");
+var LoginViewModel = require("../../shared/view-models/login-view-model");
 
 var page;
-
-var loginCredentials = new observableModule.fromObject({
-    email: "",
-    password: ""
-});
+var login = new LoginViewModel();
 
 exports.loaded = function(args){
     page = args.object;
-    page.bindingContext = loginCredentials;
+    page.bindingContext = login;
 };
 
 exports.signIn = function() {
 	// TODO: Check username & password with API and get access token
-	console.log("Loggin in with email: " + loginCredentials.email + " and password: " + loginCredentials.password);
+	console.log("Loggin in with email: " + login.email + " and password: " + login.password);
     frameModule.topmost().navigate("views/activities/activities");
 };
 
