@@ -10,6 +10,6 @@ exports.signIn = function() {
     frameModule.topmost().navigate("views/activities/activities");
 };
 
-exports.register = function() {
-    frameModule.topmost().navigate("views/activities/activities");
+exports.signUp = function() {
+    frameModule.topmost().navigate("views/signup/signup");
 };

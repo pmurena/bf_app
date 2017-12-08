@@ -1,11 +1,12 @@
 <Page loaded="loaded">
-	<ActionBar title="BuddyFinder - Login">
+	<ActionBar title="BuddyFinder - Sign Up">
     </ActionBar>
     <StackLayout orientation="vertical">
+    	<TextField hint="Username" autocorrect="false" autocapitalizationType="none" />
     	<TextField hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
 		<TextField hint="Password" secure="true" />
+		<TextField hint="Confirm Password" secure="true" />
 
-		<Button text="Sign in" class="signIn" tap="signIn"/>
 		<Button text="Sign up for Buddyfinder" tap="signUp"/>
     </StackLayout>
 </Page>
