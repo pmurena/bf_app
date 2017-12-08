@@ -7,6 +7,6 @@
 		<TextField hint="Password" secure="true" />
 		<TextField hint="Confirm Password" secure="true" />
 
-		<Button text="Sign up for Buddyfinder" tap="signUp"/>
+		<Button text="Sign up for Buddyfinder" class="signUp" tap="signUp"/>
     </StackLayout>
 </Page>
