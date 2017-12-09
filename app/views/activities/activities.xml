@@ -1,12 +1,25 @@
 <Page loaded="loaded">
     <ActionBar title="BuddyFinder">
-        <ActionItem text="New" tap="newActivity" />
+        <ActionItem text="New" tap="newActivity" android.systemIcon="ic_menu_edit" />
+        <ActionItem text="Search" tap="newActivity" android.systemIcon="ic_menu_search" />
     </ActionBar>
-    <GridLayout rows="auto, *" columns="2*, *">
-        <ListView items="{{ activities }}" id="activities" itemTap="showActivity" row="1" colSpan="2">
+        <ListView items="{{ activities }}" id="activities" itemTap="showActivity" row="1" colSpan="2" separatorColor="transparent" class="list-view">
             <ListView.itemTemplate>
-                <Label id="name" text="{{ name }}" horizontalAlignment="left" verticalAlignment="center"/>
+                <stack-layout>
+                    <GridLayout rows="3*, *" columns="*" class="card">
+                        <Image row="0" col="0" src="https://static01.nyt.com/images/2017/11/13/sports/13INDOOR-INYT1/13INDOOR-INYT1-facebookJumbo.jpg" class="card-image" stretch="aspectFill" />
+                        <GridLayout columns="*" horizontalAlignment="right" verticalAlignment="bottom">
+                            <Label id="activity-tag" text="Sports" class="activity-tag" />
+                        </GridLayout>
+                        <GridLayout row="1" rows="*" columns="auto, auto" class="card-bottom">
+                            <Image col="0" src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" class="profile-image" stretch="aspectFill" />
+                            <GridLayout col="1" rows="*, *" columns="*">
+                                <Label id="name" text="{{ name }}" horizontalAlignment="left" row="0" class="card-title" />
+                                <Label id="location" text="Bern" horizontalAlignment="left" row="1" class="card-location" />
+                            </GridLayout>
+                        </GridLayout>
+                    </GridLayout>
+                </stack-layout>
             </ListView.itemTemplate>
         </ListView>
-    </GridLayout>
 </Page>

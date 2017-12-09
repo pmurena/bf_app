@@ -1,1 +1,69 @@
+.card {
+	background-color: white;
+	margin-right: 10;
+	margin-left: 10;
+	margin-top: 5;
+	margin-bottom: 5;
+	border-radius: 10;
+}
 
+Page {
+    background-color: #EDEDED;
+}
+
+Image {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.card-image {
+	height: 200;
+	border-top-right-radius: 10;
+    border-top-left-radius: 10;
+}
+
+.profile-image {
+	height: 60;
+	width: 60;
+	margin-top: 10;
+	margin-bottom: 10;
+	margin-left: 10;
+	border-radius: 30;
+}
+
+.list-view {
+	margin-top: 5;
+	margin-top: 5;
+}
+
+.card-title {
+	margin-right: 5;
+	margin-left: 10;
+	margin-top: 10;
+	color: black;
+	height: 25;
+}
+
+.card-location {
+	margin-right: 5;
+	margin-left: 10;
+	margin-bottom: 10;
+	margin-top: 5;
+	height: 25;
+}
+
+.card-bottom {
+	height: 80;
+}
+
+.activity-tag {
+	background-color: #6881ca;
+	padding-right: 7;
+	padding-left: 7;
+	color: white;
+	border-radius: 12;
+	margin-right: 10;
+	margin-bottom: 10;
+}
