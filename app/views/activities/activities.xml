@@ -1,7 +1,7 @@
 <Page loaded="loaded">
     <ActionBar title="BuddyFinder">
         <ActionItem text="New" tap="newActivity" android.systemIcon="ic_menu_edit" />
-        <ActionItem text="Search" tap="newActivity" android.systemIcon="ic_menu_search" />
+        <ActionItem text="Search" tap="newActivity" android.systemIcon="ic_menu_friendslist" />
     </ActionBar>
         <ListView items="{{ activities }}" id="activities" itemTap="showActivity" row="1" colSpan="2" separatorColor="transparent" class="list-view">
             <ListView.itemTemplate>

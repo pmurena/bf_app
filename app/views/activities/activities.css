@@ -33,6 +33,12 @@ Image {
 	border-radius: 30;
 }
 
+.nav-image {
+	height: 35;
+	width: 35;
+	border-radius: 30;
+}
+
 .list-view {
 	margin-top: 5;
 	margin-top: 5;
