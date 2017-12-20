@@ -15,7 +15,10 @@ function Activities(items){
                 data.forEach(function(activity){
                     viewModel.push({
                         name: activity.name,
-                        description: activity.description
+                        location: activity.location,
+                        description: activity.description,
+                        tag: activity.tag || "Random",
+                        datetime: activity.date + " " + activity.time
                     });
                 });
             });

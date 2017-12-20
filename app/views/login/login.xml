@@ -2,7 +2,7 @@
 	<ActionBar title="BuddyFinder - Login">
     </ActionBar>
     <StackLayout orientation="vertical">
-    	<TextField id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" />
+    	<TextField id="username" text="{{ username }}" hint="Username" autocorrect="false" autocapitalizationType="none" />
 		<TextField id="password" text="{{ password }}" hint="Password" secure="true" />
 
 		<Button text="Sign in" class="signIn" tap="signIn"/>
