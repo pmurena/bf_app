@@ -18,7 +18,8 @@ function Activities(items){
                         location: activity.location,
                         description: activity.description,
                         tag: activity.tag || "Random",
-                        datetime: activity.date + " " + activity.time
+                        datetime: activity.date + " " + activity.time,
+                        usercount: "Attending: " + activity.users.length
                     });
                 });
             });
@@ -37,6 +38,10 @@ function Activities(items){
             viewModel.pop();
         }
     };
+
+    viewModel.sayHello = function() {
+        console.log("Hello!");
+    }
 
 
     return viewModel;

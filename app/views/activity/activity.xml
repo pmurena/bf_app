@@ -8,7 +8,7 @@
 			    <GridLayout rows="auto, auto" columns="*">
 			    	<GridLayout rows="auto, auto" columns="3*,*">
 				    	<Label id="name" text="{{ location }}" row="0" column="0" horizontalAlignment="left" verticalAlignment="center" class="title"/>
-			    		<Label id="subtitle" text="Attending: 0" row="1" column="0" horizontalAlignment="left" verticalAlignment="center" class="subtitle"/>
+			    		<Label id="subtitle" text="{{ usercount }}" row="1" column="0" horizontalAlignment="left" verticalAlignment="center" class="subtitle"/>
 		    		</GridLayout>
 		    		<GridLayout columns="*" horizontalAlignment="right" verticalAlignment="top">
 		    			<Button text="&#xf164;" class="voteUpButton" tap="voteUp"/>
