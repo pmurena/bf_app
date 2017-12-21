@@ -20,7 +20,14 @@ exports.signUp = function() {
     		okButtonText: "OK"
     	});
     } else {
-    	completeSignup();
+    	if (signup.password.length < 6) {
+    		dialogsModule.alert({
+	    		message: "Please choose a password with 6 or more characters.",
+	    		okButtonText: "OK"
+	    	});
+    	} else {
+    		completeSignup();
+    	}
     }
 };
 

@@ -9,6 +9,7 @@ var login = new LoginViewModel();
 exports.loaded = function(args){
     page = args.object;
     page.bindingContext = login;
+    // To delete token and id for debugging:
     //appSettings.remove("token");
     //appSettings.remove("id");
     if ((isAlreadyLoggedIn())) {
@@ -20,9 +21,7 @@ exports.loaded = function(args){
 };
 
 exports.signIn = function() {
-	// TODO: Check username & password with API and get access token
 	console.log("Logging in with username: " + login.username + " and password: " + login.password);
-    //frameModule.topmost().navigate("views/activities/activities");
     if (login.username == "" || login.password == "") {
     	dialogsModule.alert({
     		message: "Please fill in all the fields.",
