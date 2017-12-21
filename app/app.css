@@ -28,3 +28,12 @@ ActionBar {
     background-color:  #355599;
     color: white;
 }
+
+.profile-image {
+	height: 60;
+	width: 60;
+	margin-top: 10;
+	margin-bottom: 10;
+	margin-left: 10;
+	border-radius: 30;
+}
