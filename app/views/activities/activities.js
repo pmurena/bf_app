@@ -24,3 +24,8 @@ exports.showActivity = function(args){
 exports.newActivity = function(){
     frameModule.topmost().navigate("views/newActivity/newActivity");
 };
+
+
+exports.showProfile = function(){
+    frameModule.topmost().navigate("views/profile/profile");
+};

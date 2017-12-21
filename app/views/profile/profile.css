@@ -1,0 +1,28 @@
+TextView, TextField{
+  margin-left: 20;
+}
+
+#fname, #lname {
+    font-size: 32;
+    margin-top: 15;
+}
+
+#fname {
+  margin-left: 10;
+  padding-right: 10;
+}
+
+#lname {
+  margin-left: 0:
+}
+
+.editOff {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.editOn {
+  background-color: white;
+  border-color: black;
+  border-bottom-width: 1;
+}
