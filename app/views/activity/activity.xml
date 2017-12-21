@@ -6,11 +6,19 @@
     		<StackLayout>
 		    	<Image row="0" col="0" src="https://static01.nyt.com/images/2017/11/13/sports/13INDOOR-INYT1/13INDOOR-INYT1-facebookJumbo.jpg" class="activity-image" stretch="aspectFill" />
 			    <GridLayout rows="auto, auto" columns="*">
-			    	<Label id="name" text="{{ location }}" row="0" horizontalAlignment="left" verticalAlignment="center" class="title"/>
-		    		<Label id="subtitle" text="Attending: 0" row="1" horizontalAlignment="left" verticalAlignment="center" class="subtitle"/>
-		    		<Button text="&#xf164;" row="0" class="voteUpButton" tap="voteUp"/>
+			    	<GridLayout rows="auto, auto" columns="3*,*">
+				    	<Label id="name" text="{{ location }}" row="0" column="0" horizontalAlignment="left" verticalAlignment="center" class="title"/>
+			    		<Label id="subtitle" text="Attending: 0" row="1" column="0" horizontalAlignment="left" verticalAlignment="center" class="subtitle"/>
+		    		</GridLayout>
+		    		<GridLayout columns="*" horizontalAlignment="right" verticalAlignment="top">
+		    			<Button text="&#xf164;" class="voteUpButton" tap="voteUp"/>
+		    		</GridLayout>
+		    		<GridLayout columns="*" horizontalAlignment="right" verticalAlignment="top">
+		    			<Button text="&#xf165;" class="voteDownButton" tap="voteDown"/>
+		    		</GridLayout>
 			    </GridLayout>
 			    <Label text="{{ description }}" textWrap="true" horizontalAlignment="left" verticalAlignment="center" class="description"/>
+			    <Button text="Join" class="joinButton" tap="join"/>
 			</StackLayout>
 		</ScrollView>
 	</StackLayout>

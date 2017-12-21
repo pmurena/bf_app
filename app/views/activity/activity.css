@@ -10,11 +10,17 @@ Image {
     margin-bottom: 0;
 }
 
+Button {
+    margin: 0;
+    padding: 0;
+}
+
 .title {
 	margin-right: 10;
 	margin-left: 10;
 	margin-top: 5;
 	color: black;
+	max-width: 50;
 }
 
 .subtitle {
@@ -32,6 +38,33 @@ Image {
 
 .voteUpButton {
 	font-family: "fontawesome-webfont";
-	width: 40;
-	height: 40;
+	width: 35;
+	height: 35;
+	background-color: #6881ca;
+    color: white;
+   	border-radius: 5;
+   	margin-top: 10;
+   	margin-right: 10;
+}
+
+.voteDownButton {
+	font-family: "fontawesome-webfont";
+	width: 35;
+	height: 35;
+	background-color: #6881ca;
+    color: white;
+   	border-radius: 5;
+   	margin-top: 10;
+   	margin-right: 55;
+}
+
+.joinButton {
+	font-family: "fontawesome-webfont";
+	height: 35;
+	background-color: #6881ca;
+    color: white;
+   	border-radius: 5;
+   	margin-top: 10;
+   	margin-left: 10;
+   	margin-right: 10;
 }

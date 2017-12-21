@@ -9,3 +9,15 @@ exports.loaded = function(args){
 exports.newActivity = function(){
     frameModule.topmost().navigate("views/newActivity/newActivity");
 };
+
+exports.join = function() {
+	console.log("Join");
+}
+
+exports.voteDown = function() {
+	console.log("voteDown");
+}
+
+exports.voteUp = function() {
+	console.log("voteUp");
+}
