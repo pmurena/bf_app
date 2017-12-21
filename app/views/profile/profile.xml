@@ -12,29 +12,37 @@
 				<Image src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" class="profile-image"/>
       	<TextField text="{{ profile.firstname }}" editable="{{ setEditable }}"
 					id="fname" class="{{ editSwitch }}"
+					hint="Firstname"
 				/>
       	<TextField text="{{ profile.lastname }}" editable="{{ setEditable }}"
 					id="lname" class="{{ editSwitch }}"
+					hint="Lastname"
 				/>
 			</stack-layout>
 			<stack-layout row="1" orientation="vertical" >
       	<TextView colspan="2" text="{{ profile.description }}"
 					editable="{{ setEditable }}" id="tline" class="{{ editSwitch }}"
+					hint="description"
 				/>
       	<TextField colspan="2" text="{{ profile.canton }}"
 					editable="{{ setEditable }}" class="{{ editSwitch }}"
+					hint="canton"
 				/>
       	<TextField colspan="2" text="{{ profile.country }}"
 					editable="{{ setEditable }}" class="{{ editSwitch }}"
+					hint="country"
 				/>
       	<TextField colspan="2" text="{{ profile.email }}"
 					editable="{{ setEditable }}" class="{{ editSwitch }}"
+					hint="email"
 				/>
       	<TextField colspan="2" text="{{ profile.website }}"
 					editable="{{ setEditable }}" class="{{ editSwitch }}"
+					hint="website"
 				/>
       	<TextField colspan="2" text="{{ profile.phone }}"
 					editable="{{ setEditable }}" class="{{ editSwitch }}"
+					hint="phone"
 				/>
 			</stack-layout>
 		</GridLayout>
