@@ -19,7 +19,8 @@ function Activities(items){
                         description: activity.description,
                         tag: activity.tag || "Random",
                         datetime: activity.date + " " + activity.time,
-                        usercount: "Attending: " + activity.users.length
+                        usercount: "Attending: " + activity.users.length,
+                        img: activity.img || "http://old.lhep.unibe.ch/cyclotron/bern_728x490.jpg"
                     });
                 });
             });

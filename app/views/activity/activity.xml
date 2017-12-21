@@ -4,7 +4,7 @@
     <StackLayout>
     	<ScrollView orientation="vertical">
     		<StackLayout>
-		    	<Image row="0" col="0" src="https://static01.nyt.com/images/2017/11/13/sports/13INDOOR-INYT1/13INDOOR-INYT1-facebookJumbo.jpg" class="activity-image" stretch="aspectFill" />
+		    	<Image row="0" col="0" src="{{ img }}" class="activity-image" stretch="aspectFill" />
 			    <GridLayout rows="auto, auto" columns="*">
 			    	<GridLayout rows="auto, auto" columns="3*,*">
 				    	<Label id="name" text="{{ location }}" row="0" column="0" horizontalAlignment="left" verticalAlignment="center" class="title"/>
