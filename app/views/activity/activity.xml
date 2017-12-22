@@ -18,7 +18,7 @@
 		    		</GridLayout>
 			    </GridLayout>
 			    <Label text="{{ description }}" textWrap="true" horizontalAlignment="left" verticalAlignment="center" class="description"/>
-			    <Button text="Join" class="joinButton" tap="join"/>
+			    <Button id="joinButton" text="Join" class="joinButton" tap="join"/>
 			</StackLayout>
 		</ScrollView>
 	</StackLayout>

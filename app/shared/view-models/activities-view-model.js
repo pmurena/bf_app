@@ -14,13 +14,15 @@ function Activities(items){
             .then(function(data){
                 data.forEach(function(activity){
                     viewModel.push({
+                        id: activity._id,
                         name: activity.name,
                         location: activity.location,
                         description: activity.description,
                         tag: activity.tag || "Random",
                         datetime: activity.date + " " + activity.time,
                         usercount: "Attending: " + activity.users.length,
-                        img: activity.img || "http://old.lhep.unibe.ch/cyclotron/bern_728x490.jpg"
+                        img: activity.img || "http://old.lhep.unibe.ch/cyclotron/bern_728x490.jpg",
+                        users: activity.users
                     });
                 });
             });
