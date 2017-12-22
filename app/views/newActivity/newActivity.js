@@ -1,8 +1,10 @@
 var frameModule = require("ui/frame");
 var Activities = require("../../shared/view-models/activities-view-model");
 var observableModule = require("data/observable")
+var ActivityViewModel = require("../../shared/view-models/activity-view-model");
+var dialogsModule = require("ui/dialogs");
 
-var activity = new Activities([]);
+var activity = new ActivityViewModel();
 
 exports.loaded = function(args){
     page = args.object;
@@ -10,6 +12,9 @@ exports.loaded = function(args){
 };
 
 exports.createActivity = function(){
-    activity.save();
-    frameModule.topmost().navigate("views/activities/activities");
+    activity.save()
+    .then(function() {
+		dialogsModule.alert("Successfully created activity!");
+		frameModule.topmost().navigate("views/activities/activities");
+	});
 };

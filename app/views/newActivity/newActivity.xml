@@ -2,8 +2,13 @@
     <ActionBar title="BuddyFinder">
     </ActionBar>
     <StackLayout>
-        <TextField text="{{ name }}" id="email" hint="Activiy name" />
+        <TextField text="{{ name }}" hint="Activity name" />
         <TextField text="{{ description }}" hint="Say something about your activity" />
+        <TextField text="{{ location }}" hint="Location of your activity" />
+        <TextField text="{{ date }}" hint="Date of your activity" />
+        <TextField text="{{ time }}" hint="Time of your activity" />
+        <TextField text="{{ tag }}" hint="Tag your activity" />
+        <TextField text="{{ img }}" hint="Activity image URL" />
         <Button text="Create Activity" tap="createActivity" />
     </StackLayout>
 </Page>

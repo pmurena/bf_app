@@ -34,7 +34,14 @@ function Activities(items){
         fetch(config.apiUrl + "activities", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name: viewModel.name, description: viewModel.description})
+            body: JSON.stringify({ 
+                name: viewModel.name, 
+                description: viewModel.description,
+                location: viewModel.location,
+                date: viewModel.date,
+                time: viewModel.time,
+                tag: viewModel.tag
+            })
         });
     };
 
