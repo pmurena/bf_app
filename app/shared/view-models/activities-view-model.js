@@ -22,7 +22,9 @@ function Activities(items){
                         datetime: activity.date + " " + activity.time,
                         usercount: "Attending: " + activity.users.length,
                         img: activity.img || "http://old.lhep.unibe.ch/cyclotron/bern_728x490.jpg",
-                        users: activity.users
+                        users: activity.users,
+                        likes: activity.upvotedBy,
+                        dislikes: activity.downvotedBy
                     });
                 });
             });
